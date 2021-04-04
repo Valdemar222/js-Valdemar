@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<script>
+			var sourse ='12474746'; 
+			var result = 0;
+			for ( i = 0; i < sourse.length; i++) {
+				if (i != 0) {
+					var prey = sourse[i] - sourse[i - 1]
+				}
+				if ( i < sourse.length - 1) {
+					var next = Math.abs(sourse[i] - sourse[i + 1])
+				}
+				if (prey > 1 || next > 1) {
+					alert('лох')
+					result = 1;
+					break;
+				}
+			}	
+			if (result = 0) {	
+				alert('Не лох')
+			}	else	
+					alert('лох');
+			
+			}	
+		</script>
+	</body>
+<html>	

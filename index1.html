@@ -1,0 +1,50 @@
+<html>
+    
+	
+	<head>
+	    <script>
+		    
+			var digits = new Array();
+			
+			for(i = 0; i < 4; i++) 
+			{
+				var correctDigit = false;
+				while (correctDigit == false)
+			    {
+			      var rnd = Math.random () * 9;
+			      var rounded = Math.floor(rnd);
+			      if(!digits.includes(rounded))
+			     
+					
+					{
+					digits.push(rounded)
+					correctDigit = true
+					}
+				}
+			}
+            alert(digits);		    
+		   
+		</script>
+	</head>	
+	
+	<body>
+	     
+		 
+		<form name ="user form">
+		   <input type = "test" id="d1" min = "0" max = "9">
+		   <input type = "test" id="d2" min = "0" max = "9">
+		   <input type = "test" id="d3" min = "0" max = "9">
+		   <input type = "test" id="d4" min = "0" max = "9">
+		</form>
+    </body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>
+     

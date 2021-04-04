@@ -1,0 +1,49 @@
+<html>
+    
+	
+	<head>
+	    <script type="type/javascript" src="Random.js"></script>
+		<script>
+		   var secret = randomDigits();
+			function buttonPress() {
+				//alert(secret);
+		        var user_input = document.getElementById("user_input").value;
+			    var cows = 0;
+			    var bulls = 0;
+			    alert(user_input);
+			
+			    for (i = 0; i < user_input.length; i++) {
+				   
+				    if (secret.includes(user_input[i])) {
+					
+					cows = cows +1;
+					
+					
+			        }
+					
+					
+			    }
+				alert(cows);
+				
+			}
+			
+		</script>
+	</head>	
+	
+	<body>
+	    <h1> Отгадай 4 цифры!</h1>
+	     <input tupe="text"id="user_input">
+		 <button onclick="buttonPress()">Проверить!</button>
+		
+    </body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>
+     
